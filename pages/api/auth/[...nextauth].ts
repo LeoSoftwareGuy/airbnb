@@ -40,7 +40,6 @@ export const authOptions:AuthOptions = {
                 }
 
                 const isCorrectPassword = await bcrypt.compare(credentials.password, user.hashedPassword);
-                console.log(user);
                 if(!isCorrectPassword){
                     throw new Error('Wrong password');
                 }
