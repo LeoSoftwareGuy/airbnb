@@ -59,6 +59,7 @@ const UserMenu = () => {
           </div>
         </div>
       </div>
+
       {isOpen && (
         <div
           className="
