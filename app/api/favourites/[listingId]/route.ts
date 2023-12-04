@@ -3,6 +3,12 @@ import { NextResponse } from "next/server";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import prisma from "@/app/libs/prismadb";
 
+
+/* We can not use useSearchParams from next/navigation as this is server side
+
+so we do 
+ {params}:{params:IParams}
+*/
 interface IParams {
     listingId?:string
 }
