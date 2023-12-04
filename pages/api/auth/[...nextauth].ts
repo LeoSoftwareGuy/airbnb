@@ -26,6 +26,7 @@ export const authOptions:AuthOptions = {
                 password:{label:'password', type:'password'}
             },
             async authorize(credentials){
+                const bcrypt = require('bcrypt');
                 if (!credentials?.email || !credentials?.password){
                     throw new Error("Credentials were not provided!");
                 }

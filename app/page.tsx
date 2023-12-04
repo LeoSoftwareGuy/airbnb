@@ -1,5 +1,3 @@
-"use client";
-
 import getListings from "./actions/getListings";
 import Container from "./components/Container";
 import EmptyState from "./components/EmptyState";

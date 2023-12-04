@@ -5,7 +5,11 @@ const nextConfig = {
             "avatars.githubusercontent.com",
             "res.cloudinary.com"
         ]
-    }
+    },
+    //  webpack: (config) => {
+    //       config.externals = [...config.externals, 'bcrypt'];
+    //       return config;
+    //      },
 }
 
 module.exports = nextConfig
