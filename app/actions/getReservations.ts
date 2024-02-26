@@ -14,14 +14,17 @@ export default async function getReservations(
 
     const query: any = {};
         
+    // all reservations of parcticular listing
     if (listingId) {
       query.listingId = listingId;
     };
 
+    // reservations done by current user (his trips)
     if (userId) {
       query.userId = userId;
     }
 
+    // reservations of a lisiting which was created by current user
     if (authorId) {
       query.listing = { userId: authorId };
     }
