@@ -3,9 +3,11 @@ import getCurrentUser from "./actions/getCurrentUser";
 import LoginModal from "./components/modal/LoginModel";
 import RegisterModal from "./components/modal/RegisterModal";
 import RentModal from "./components/modal/RentModal";
+import SearchModal from "./components/modal/SearchModal";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import ToasterProvider from "./providers/ToasterProvider";
+
 
 export const metadata = {
   title: "Airbnb",
@@ -27,6 +29,7 @@ export default async function RootLayout({
       <body className={font.className}>
         <>
           <ToasterProvider />
+          <SearchModal/>
           <RentModal />
           <LoginModal />
           <RegisterModal />
